@@ -10,6 +10,7 @@ var k_mapContainer = document.getElementById('k_map'), // 지도를 표시할 di
 var k_map = new kakao.maps.Map(k_mapContainer, k_mapOption); 
 
 
+// 장소 검색 객체를 생성합니다
 var ps = new kakao.maps.services.Places();
 
 ps.keywordSearch('이태원 맛집', palceSearchCB);
