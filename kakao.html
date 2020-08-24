@@ -15,13 +15,26 @@
             제목
         </div>
    </div>
-    <form class="addressForm">
-        <input type="text" class="inputAddress" placeholder="주소를 입력하세요">
-    </form>
-     <div id="map"></div>
-     <input type="button" class="getPosition" value="내 위치">
-    
+
+<div class="map_wrap">
+    <div id="map" style="width:100%;height:100%;position:relative;overflow:hidden;"></div>
+
+    <div id="menu_wrap" class="bg_white">
+        <div class="option">
+            <div>
+                <form onsubmit="searchPlaces(); return false;">
+                    키워드 : <input type="text" value=" " id="keyword" size="15" placeholder="검색할 장소를 입력하세요."> 
+                    <button type="submit">검색하기</button> 
+                </form>
+            </div>
+        </div>
+        <hr>
+        <ul id="placesList"></ul>
+        <div id="pagination"></div>
+    </div>
+</div>
     <script src="keywordsearch.js"></script>
+
 </body>
 </html>
 
