@@ -11,6 +11,13 @@
     margin-top: 10px;
 }
 
+#k_map{
+    width : 100%;
+    height : 800px;
+    text-align: center;
+    margin-top: 10px;
+}
+
 .top {
     background-color: black;
     color:white;
@@ -20,7 +27,6 @@
     height:40px;
     width: 100%;
     text-align: center;
-
 }
 
 body{
